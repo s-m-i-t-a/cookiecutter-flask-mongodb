@@ -1,0 +1,10 @@
+{
+	"full_name": "Jindřich Smitka",
+	"email": "smitka.j@gmail.com",
+	"git_username": "jsmitka",
+        "git_provider": "bitbucket.org"
+	"project_name": "My Flask App",
+	"repo_name": "myflaskapp",
+	"project_short_description": "A flasky app.",
+	"year": "2013"
+}
