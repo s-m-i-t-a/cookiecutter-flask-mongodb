@@ -12,3 +12,4 @@ wsgiref==0.1.2
 flask-mongoengine==0.7.0
 mongoengine==0.8.4
 pymongo==2.6
+Unipath==1.0
