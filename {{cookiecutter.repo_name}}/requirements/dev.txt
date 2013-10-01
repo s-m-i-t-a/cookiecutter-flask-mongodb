@@ -7,3 +7,7 @@ should-dsl
 pinocchio
 behave
 splinter
+flake8
+unittest2
+ipython
+Flask-Testing
