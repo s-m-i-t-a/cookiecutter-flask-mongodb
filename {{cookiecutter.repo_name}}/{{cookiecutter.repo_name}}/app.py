@@ -10,7 +10,7 @@ from config.blueprints import register_blueprints
 
 app = Flask(__name__)
 
-app.config.from_object('config.settings')
+app.config.from_object('config.settings.base')
 
 if os.getenv('APP_SETTINGS', None) is not None:
     app.config.from_envvar("APP_SETTINGS")
