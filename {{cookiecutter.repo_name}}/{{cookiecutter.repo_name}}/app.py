@@ -8,13 +8,12 @@ from flask.ext.mongoengine import MongoEngine
 from config.blueprints import register_blueprints
 
 
+configuration = os.getenv('APP_CONFIGURATION', 'Production')
+settings = 'config.settings.%s' % configuration
+
+
 app = Flask(__name__)
-
-app.config.from_object('config.settings.base')
-
-if os.getenv('APP_SETTINGS', None) is not None:
-    app.config.from_envvar("APP_SETTINGS")
-
+app.config.from_object(settings)
 db = MongoEngine(app)
 
 register_blueprints(app)
