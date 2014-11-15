@@ -2,21 +2,10 @@
 
 import os
 
-from flask import Flask
-from flask.ext.mongoengine import MongoEngine
-
-from config.blueprints import register_blueprints
+from {{cookiecutter.repo_name}} import create_app
 
 
-configuration = os.getenv('APP_CONFIGURATION', 'Production')
-settings = 'config.settings.%s' % configuration
-
-
-app = Flask(__name__)
-app.config.from_object(settings)
-db = MongoEngine(app)
-
-register_blueprints(app)
+app = create_app(os.getenv('APP_CONFIGURATION', 'Production'))
 
 
 if __name__ == '__main__':

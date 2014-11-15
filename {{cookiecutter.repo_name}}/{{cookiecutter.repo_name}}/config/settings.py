@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import os
 import os.path
 
-from .utils import get_dtb_config
+from .utils import get_dtb_config, getenv
 
 
 class BaseConfig(object):
@@ -17,10 +16,10 @@ class BaseConfig(object):
 
     BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-    SECRET_KEY = os.environ['SECRET_KEY']
+    SECRET_KEY = getenv('SECRET_KEY')
 
     # Databases uri string (e.g. mongodb://localhost/wsys)
-    MONGODB_SETTINGS = get_dtb_config(os.environ['DATABASE_URL'])
+    MONGODB_SETTINGS = get_dtb_config(getenv('DATABASE_URL'))
 
 
 class Production(BaseConfig):
