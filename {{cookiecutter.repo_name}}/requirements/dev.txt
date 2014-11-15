@@ -9,7 +9,6 @@ flake8
 pyflakes
 mccabe
 splinter
-unittest2
 ipython
 selenium
 mock
@@ -18,3 +17,4 @@ pytest
 pytest-cov
 pytest-bdd
 pytest-splinter
+tox
