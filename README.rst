@@ -15,7 +15,7 @@ Features
 - Twitter Bootstrap 3 and starter templates
 - flask-mongoengine - Object-Document-Mapper for working with MongoDB
 - Procfile for deploying to a PaaS (e.g. Heroku)
-- nose for testing
+- pytest for testing
 
 Using this template
 -------------------
