@@ -18,7 +18,7 @@ Using this template
 ::
 
     $ pip install cookiecutter
-    $ cookiecutter https://bitbucket.org/jsmitka/cookiecutter-flask-mongodb.git
+    $ cookiecutter https://github.com/s-m-i-t-a/cookiecutter-flask-mongodb.git
 
 You will be asked about your basic info (name, project name, etc.). This info will be used in your new project.
 
