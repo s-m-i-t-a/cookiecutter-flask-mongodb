@@ -18,3 +18,4 @@ pytest-cov
 pytest-bdd
 pytest-splinter
 tox
+watchdog
